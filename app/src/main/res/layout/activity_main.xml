@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#323232"
+    android:backgroundTint="#535353"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/square"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#CC4A4A"
+        android:backgroundTint="#DA5656"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/square2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CFCD44"
+        android:backgroundTint="#554B16"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/square3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:background="#CFCD44"
+        android:backgroundTint="#165055"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
